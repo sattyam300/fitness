@@ -1,0 +1,192 @@
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1a1c20 0%, #2d3436 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+}
+
+/* Show Plans Button */
+.showplans{
+  background: linear-gradient(45deg, rgb(53, 53, 207), rgb(23, 23, 121));
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  /* font-size: 1.5rem; */
+  border-radius: 30px;
+  cursor: pointer;
+  margin-bottom: 30px;
+  transform: translateY(0);
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px white;
+}
+
+/* .show-plans-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(255, 65, 108, 0.4);
+}
+
+.show-plans-btn.active {
+  background: linear-gradient(45deg, #ff4b2b, #ff416c);
+} */
+
+/* Plans Container */
+.plans-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  /* opacity: 0; */
+  /* visibility: hidden; */
+  transform: translateY(20px);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.plans-container.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Plan Cards */
+.plan-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 30px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.plan-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Badge */
+.badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 5px 15px;
+  border-radius: 15px;
+  font-size: 0.9rem;
+}
+
+/* Most Popular Tag */
+.most-popular {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(45deg,  rgb(71, 71, 191), rgb(40, 40, 162));
+  padding: 8px 20px;
+  border-radius: 0 0 15px 15px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+/* Plan Headers */
+.plan-card h2 {
+  margin: 20px 0;
+  font-size: 1.8rem;
+}
+
+/* Price Styling */
+.price {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.price span {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+/* Features List */
+.features {
+  list-style: none;
+  margin: 30px 0;
+  text-align: left;
+}
+
+.features li {
+  margin: 15px 0;
+  padding-left: 25px;
+  position: relative;
+}
+
+.features li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: rgb(4, 14, 48);
+}
+
+/* Select Plan Button */
+.select-plan {
+  background: linear-gradient(45deg,  rgb(71, 71, 191), rgb(40, 40, 162));
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.select-plan:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px white;
+}
+
+/* Plan-specific styling */
+.basic {
+  background: linear-gradient(135deg, rgba(76, 81, 191, 0.1), rgba(102, 126, 234, 0.1));
+}
+
+.premium {
+  background: linear-gradient(135deg, rgba(67, 65, 144, 0.1), rgba(76, 81, 191, 0.1));
+}
+
+.elite {
+  background: linear-gradient(135deg, rgba(76, 81, 191, 0.2), rgba(102, 126, 234, 0.2));
+}
+
+.family {
+  background: linear-gradient(135deg, rgba(67, 65, 144, 0.1), rgba(76, 81, 191, 0.1));
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .plans-container {
+      grid-template-columns: 1fr;
+      padding: 20px;
+  }
+
+  .plan-card {
+      margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GymiFY - Work Hard To Get Better Life</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favivon.png" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Catamaran:wght@600;700;800;900&family=Rubik:wght@400;500;800&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+  <link rel="preload" as="image" href="./assets/images/hero-circle-one.png">
+  <link rel="preload" as="image" href="./assets/images/hero-circle-two.png">
+  <link rel="preload" as="image" href="./assets/images/heart-rate.svg">
+  <link rel="preload" as="image" href="./assets/images/calories.svg">
+
+</head>
+
+<body id="top">
+
+  <!-- Header Section -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="index.html" class="logo">
+        <ion-icon name="barbell-outline" aria-hidden="true"></ion-icon>
+
+        <span class="span">GymiFY</span>
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-sharp" aria-hidden="true"></ion-icon>
+        </button>
+
+        <ul class="navbar-list">
+          <li>
+            <a href="#home" class="navbar-link active" data-nav-link>Home</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link" data-nav-link>About Us</a>
+          </li>
+
+          <li>
+            <a href="#class" class="navbar-link" data-nav-link>Classes</a>
+          </li>
+
+          <li>
+            <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="navbar-link" data-nav-link>Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+
+      <a href="login&singup.html" class="btn btn-secondary">Login</a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+
+    </div>
+  </header>
+
+
+  <main>
+    <article>
+
+      <!-- Hero Section -->
+
+      <section class="section hero bg-dark has-after has-bg-image" id="home" aria-label="hero" data-section style="background-image: url('./assets/images/hero-bg.png');">
+        <div class="container">
+
+          <div class="hero-content">
+            <p class="hero-subtitle">
+              <strong class="strong">The Best</strong>Fitness Club
+            </p>
+            <h1 class="h1 hero-title">Work Hard To Get Better Life</h1>
+            <p class="section-text">
+              Transform Your Fitness Journey with Our Comprehensive Gym Website - Your Ultimate Fitness Companion
+            </p>
+            <a href="plan.html" class="btn btn-primary">Plan</a>
+          </div>
+
+          <div class="hero-banner">
+            <img src="./assets/images/hero-banner.png" alt="hero banner" width="660" height="753" class="w-100">
+            <img src="./assets/images/hero-circle-one.png" alt="hero banner" width="666" height="666" aria-hidden="true" class="circle circle-1">
+            <img src="./assets/images/hero-circle-two.png" alt="hero banner" width="666" height="666" aria-hidden="true" class="circle circle-2">
+
+            <img src="./assets/images/heart-rate.svg" alt="heart rate" width="255" height="270" class="abs-img abs-img-1">
+            <img src="./assets/images/calories.svg" alt="calories" width="348" height="224" class="abs-img abs-img-2">
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- About Section -->
+
+
+      <section class="section about" id="about" aria-label="about">
+
+        <div class="container">
+
+          <div class="about-banner has-after">
+            <img src="./assets/images/about-banner.png" alt="about banner" width="660" height="648" loading="lazy" class="w-100">
+
+            <img src="./assets/images/about-circle-one.png" width="660" height="534" loading="lazy" aria-hidden="true" alt="" class="circle circle-1">
+            <img src="./assets/images/about-circle-two.png" width="660" height="534" loading="lazy" aria-hidden="true" alt="" class="circle circle-2">
+
+            <img src="./assets/images/fitness.png" alt="fitness" width="650" height="154" loading="lazy" class="abs-img w-100">
+          </div>
+
+          <div class="about-content">
+            <p class="section-subtitle">About Us</p>
+            <h2 class="h2 section-title">Welcome To Our Fitness Gym</h2>
+            <p class="section-text">
+              GymiFy is a premium fitness center that offers state-of-the-art equipment, experienced trainers, and customized workout plans to help you achieve your fitness goals.
+            </p>
+  
+            <p class="section-text">
+              Our welcoming environment and friendly staff make every visit an enjoyable experience. Join us to transform your body, boost your energy, and improve your overall health and wellbeing.
+            </p>
+  
+            <div class="wrapper">
+              <div class="about-coach">
+                <figure class="coach-avatar">
+                  <img src="./assets/images/about-coach.jpg" width="65" height="65" loading="lazy" alt="Trainer">
+                </figure>
+  
+                <div>
+                  <h3 class="h3 coach-name">Tom Weskii</h3>
+                  <p class="coach-title">Our Coach</p>
+                </div>
+              </div>
+  
+              <a href="#" class="btn btn-primary">Explore More</a>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- Video Section -->
+
+
+      <section class="section video" aria-label="video">
+        <div class="container">
+          <div class="video-card has-before has-bg-image" style="background-image: url('./assets/images/video-banner.jpg');">
+            <h2 class="h2 card-title">Explore Fitness Life</h2>
+
+            <button class="play-btn" aria-label="play video">
+              <ion-icon name="play-sharp" aria-hidden="true"></ion-icon>
+            </button>
+
+            <a href="#" class="btn-link has-before">Watch More</a>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Class Section -->
+
+
+      <section class="section class bg-dark has-bg-image" id="class" aria-label="class" style="background-image: url('./assets/images/classes-bg.png');">
+        <div class="container">
+          <p class="section-subtitle">Our Classes</p>
+
+          <h2 class="h3 section-title text-center">Fitness Classes For Every Goal</h2>
+
+          <ul class="class-list has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="class-card">
+
+                <figure class="card-banner img-holder" style="--width: 416; height: 240;">
+                  <img src="./assets/images/class-1.jpg" alt="Weight Lifting" width="416" height="240" loading="lazy" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/class-icon-1.png" alt="title-icon" width="52" height="52" aria-hidden="true" class="title-icon">
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Weight Lifting</a>
+                    </h3>
+                  </div>
+
+                  <p class="card-text">
+                    Suspendisse nisi libero, cursus ac magna sit amet, fermentum imperdiet nisi.
+                  </p>
+
+                  <div class="card-progress">
+                    <div class="progress-wrapper">
+                      <p class="progress-label">Class Full</p>
+                      <span class="progress-value">85%</span>
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress-bar" style="width: 85%"></div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="class-card">
+
+                <figure class="card-banner img-holder" style="--width: 416; height: 240;">
+                  <img src="./assets/images/class-2.jpg" alt="Weight Lifting" width="416" height="240" loading="lazy" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/class-icon-2.png" alt="title-icon" width="52" height="52" aria-hidden="true" class="title-icon">
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Cardio & Strenght</a>
+                    </h3>
+                  </div>
+
+                  <p class="card-text">
+                    Suspendisse nisi libero, cursus ac magna sit amet, fermentum imperdiet nisi.
+                  </p>
+
+                  <div class="card-progress">
+                    <div class="progress-wrapper">
+                      <p class="progress-label">Class Full</p>
+                      <span class="progress-value">70%</span>
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress-bar" style="width: 70%"></div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="class-card">
+
+                <figure class="card-banner img-holder" style="--width: 416; height: 240;">
+                  <img src="./assets/images/class-3.jpg" alt="Weight Lifting" width="416" height="240" loading="lazy" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/class-icon-3.png" alt="title-icon" width="52" height="52" aria-hidden="true" class="title-icon">
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Power Yoga</a>
+                    </h3>
+                  </div>
+
+                  <p class="card-text">
+                    Suspendisse nisi libero, cursus ac magna sit amet, fermentum imperdiet nisi.
+                  </p>
+
+                  <div class="card-progress">
+                    <div class="progress-wrapper">
+                      <p class="progress-label">Class Full</p>
+                      <span class="progress-value">90%</span>
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress-bar" style="width: 90%"></div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="class-card">
+
+                <figure class="card-banner img-holder" style="--width: 416; height: 240;">
+                  <img src="./assets/images/class-4.jpg" alt="Weight Lifting" width="416" height="240" loading="lazy" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/class-icon-4.png" alt="title-icon" width="52" height="52" aria-hidden="true" class="title-icon">
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title">The Fitness Pack</a>
+                    </h3>
+                  </div>
+
+                  <p class="card-text">
+                    Suspendisse nisi libero, cursus ac magna sit amet, fermentum imperdiet nisi.
+                  </p>
+
+                  <div class="card-progress">
+                    <div class="progress-wrapper">
+                      <p class="progress-label">Class Full</p>
+                      <span class="progress-value">60%</span>
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress-bar" style="width: 60%"></div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </section>
+
+
+      <!-- Blog Section -->
+
+
+      <section class="blog section" id="blog" aria-label="blog">
+        <div class="container">
+
+          <p class="section-subtitle">Our News</p>
+
+          <h2 class="h2 section-title text-center">Latest Blog Feed</h2>
+
+          <ul class="blog-list has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="blog-card">
+
+                <div class="card-banner img-holder" style="--width: 440; --height: 270;">
+
+                  <img src="./assets/images/blog-1.jpg" alt="Going to the gym for the first time" width="440" height="270" loading="lazy" class="img-cover">
+
+                  <time class="card-meta" datetime="2023-05-03">3 May 2023</time>
+
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Going to the gym for the first time</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Praesent id ipsum pellentesque lectus dapibus condimentum curabitur eget risus quam. In hac
+                    habitasse platea dictumst.`
+                  </p>
+
+                  <a href="readmore.html" class="btn-link has-before">Read More</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="blog-card">
+
+                <div class="card-banner img-holder" style="--width: 440; --height: 270;">
+
+                  <img src="./assets/images/blog-2.jpg" alt="Parturient accumsan cacus pulvinar magna" width="440" height="270" loading="lazy" class="img-cover">
+
+                  <time class="card-meta" datetime="2023-05-03">3 May 2023</time>
+
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Parturient accumsan cacus pulvinar magna</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Praesent id ipsum pellentesque lectus dapibus condimentum curabitur eget risus quam. In hac
+                    habitasse platea dictumst.
+                  </p>
+
+                  <a href="#" class="btn-link has-before">Read More</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="blog-card">
+
+                <div class="card-banner img-holder" style="--width: 440; --height: 270;">
+
+                  <img src="./assets/images/blog-3.jpg" alt="Risus purus namien parturient accumsan cacus" width="440" height="270" loading="lazy" class="img-cover">
+
+                  <time class="card-meta" datetime="2023-05-03">3 May 2023</time>
+
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Risus purus namien parturient accumsan cacus</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Praesent id ipsum pellentesque lectus dapibus condimentum curabitur eget risus quam. In hac
+                    habitasse platea dictumst.
+                  </p>
+
+                  <a href="#" class="btn-link has-before">Read More</a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+    </article>
+  </main>
+
+
+
+  <!-- Footer Section -->
+  <footer class="footer">
+
+    <div class="section footer-top bg-dark has-bg-image"       style="background-image: url('./assets/images/footer-bg.png');">
+      <div class="container">
+
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <ion-icon name="barbell-sharp" aria-hidden="true"></ion-icon>
+            <span class="span">GymiFY</span>
+          </a>
+
+          <p class="footer-brand-text">
+            Etiam suscipit fringilla ullamcorper sed malesuada urna nec odio.
+          </p>
+
+          <div class="wrapper">
+            <img src="./assets/images/footer-clock.png" width="34" height="34" loading="lazy" alt="Clock">
+
+            <ul class="footer-brand-list">
+              <li>
+                <p class="footer-brand-title">Monday - Friday</p>
+                <p>7:00Am - 10:00Pm</p>
+              </li>
+
+              <li>
+                <p class="footer-brand-title">Saturday - Sunday</p>
+                <p>7:00Am - 2:00Pm</p>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title has-before">Our Links</p>
+          </li>
+
+          <li>
+            <a href="#home" class="footer-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#about" class="footer-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="#class" class="footer-link">Classes</a>
+          </li>
+
+          <li>
+            <a href="#blog" class="footer-link">Blog</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="footer-link">Contact Us</a>
+          </li>
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title has-before">Contact Us</p>
+          </li>
+
+          <li class="footer-list-item">
+            <div class="icon">
+              <ion-icon name="location" aria-hidden="true"></ion-icon>
+            </div>
+
+            <address class="address footer-link">
+              1247/Plot No. 39, 15th Phase, Colony, Kukatpally, Hyderabad
+            </address>
+          </li>
+
+          <li class="footer-list-item">
+            <div class="icon">
+              <ion-icon name="call" aria-hidden="true"></ion-icon>
+            </div>
+
+            <div>
+              <a href="tel:1800-121-3637" class="footer-link">1800-121-3637</a>
+              <a href="tel:+91 555 234-8765" class="footer-link">+91 555 234-8765</a>
+            </div>
+          </li>
+
+          <li class="footer-list-item">
+            <div class="icon">
+              <ion-icon name="mail" aria-hidden="true"></ion-icon>
+            </div>
+
+            <div>
+              <a href="mailto:info@GymiFY.com" class="footer-link">info@GymiFY.com</a>
+              <a href="mailto:services@GymiFY.com" class="footer-link">services@GymiFY.com</a>
+            </div>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title has-before">Our Newsletter</p>
+          </li>
+
+          <li>
+            <form action="" class="footer-form">
+              <input type="email" name="email_address" aria-label="email" placeholder="Email Address" required class="input-field">
+
+              <button type="submit" aria-label="Submit" class="btn btn-primary">
+                <ion-icon name="chevron-forward-sharp" aria-hidden="true"></ion-icon>
+              </button>
+            </form>
+          </li>
+
+          <li>
+            <ul class="social-list">
+
+              <li>
+                <a href="www.facebook.com" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="www.instagram.com" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="www.twitter.com" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2023 GymiFY. All Rights Reserved By <a href="#" class="copyright-link">codewithaarzoo.</a>
+        </p>
+
+        <ul class="footer-bottom-list">
+
+          <li>
+            <a href="#" class="footer-bottom-link has-before">Privacy Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link has-before">Terms & Condition</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+  <!-- Back to Top Section -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="caret-up-sharp" aria-hidden="true"></ion-icon>
+  </a>
+
+
+  <!-- Custom JS Link -->
+  <script src="./assets/js/script.js" defer></script>
+
+
+
+  <!-- ION-ICON Link -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
